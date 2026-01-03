@@ -67,9 +67,13 @@
             border-radius: 10px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.1);
             transition: transform 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
         .blog-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
         }
         .blog-card h3 {
             color: #667eea;
@@ -83,6 +87,26 @@
         .blog-card .date {
             color: #999;
             font-size: 0.9rem;
+        }
+        .blog-card .live-badge {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .blog-card .coming-badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #333;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
         }
         .about {
             background: white;
@@ -102,15 +126,15 @@
             padding: 2rem 0;
             margin-top: 3rem;
         }
-        .coming-soon {
-            background: #fff3cd;
-            border: 2px solid #ffc107;
-            padding: 1rem;
-            border-radius: 5px;
+        .success-banner {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
             text-align: center;
             margin: 2rem 0;
             font-weight: bold;
-            color: #856404;
+            font-size: 1.1rem;
         }
         @media (max-width: 768px) {
             header h1 {
@@ -138,44 +162,50 @@
             <p><strong>Goal: Help you reach ₹1 Lakh/month income</strong></p>
         </div>
 
-        <div class="coming-soon">
-            🚀 Blog launching soon! First post coming today: "How to Start Investing with ₹500/month"
+        <div class="success-banner">
+            🎉 Blog is LIVE! First post published - Start reading now!
         </div>
 
-        <h2 style="text-align: center; color: #667eea; margin: 2rem 0;">📚 Upcoming Blog Posts</h2>
+        <h2 style="text-align: center; color: #667eea; margin: 2rem 0;">📚 Latest Blog Posts</h2>
         
         <div class="blog-grid">
-            <div class="blog-card">
+            <a href="post1.html" class="blog-card">
+                <span class="live-badge">● LIVE NOW</span>
                 <h3>How to Start Investing with ₹500/month</h3>
                 <p>Complete beginner's guide to starting your investment journey with just ₹500. Learn about SIP, mutual funds, and best apps.</p>
-                <span class="date">Coming Soon</span>
-            </div>
+                <span class="date">Published: January 3, 2026 | 8 min read</span>
+            </a>
 
-            <div class="blog-card">
+            <div class="blog-card" style="opacity: 0.7; cursor: default;">
+                <span class="coming-badge">COMING SOON</span>
                 <h3>10 Best Savings Apps in India 2026</h3>
                 <p>Discover the top apps that help you save money automatically and build wealth effortlessly.</p>
-                <span class="date">Coming Soon</span>
+                <span class="date">Coming This Week</span>
             </div>
 
-            <div class="blog-card">
+            <div class="blog-card" style="opacity: 0.7; cursor: default;">
+                <span class="coming-badge">COMING SOON</span>
                 <h3>12 Side Hustles to Earn ₹20,000/month</h3>
                 <p>Practical side hustle ideas you can start from your phone. Real strategies that work in India.</p>
-                <span class="date">Coming Soon</span>
+                <span class="date">Coming This Week</span>
             </div>
 
-            <div class="blog-card">
+            <div class="blog-card" style="opacity: 0.7; cursor: default;">
+                <span class="coming-badge">COMING SOON</span>
                 <h3>Best Credit Cards for Students</h3>
                 <p>Everything you need to know about getting your first credit card and building credit score.</p>
                 <span class="date">Coming Soon</span>
             </div>
 
-            <div class="blog-card">
+            <div class="blog-card" style="opacity: 0.7; cursor: default;">
+                <span class="coming-badge">COMING SOON</span>
                 <h3>Complete Guide to SIP for Beginners</h3>
                 <p>Step-by-step guide to starting your first SIP and building long-term wealth through systematic investing.</p>
                 <span class="date">Coming Soon</span>
             </div>
 
-            <div class="blog-card">
+            <div class="blog-card" style="opacity: 0.7; cursor: default;">
+                <span class="coming-badge">COMING SOON</span>
                 <h3>How to Budget ₹30,000 Salary</h3>
                 <p>Practical budgeting strategies for young professionals. Learn the 50-30-20 rule and save effectively.</p>
                 <span class="date">Coming Soon</span>
@@ -194,6 +224,7 @@
             </ul>
             <p><strong>Mission:</strong> Help every Indian achieve financial freedom through simple, actionable advice.</p>
             <p><strong>Started:</strong> January 2026</p>
+            <p><strong>Posts Published:</strong> 1 (and counting!)</p>
         </div>
     </div>
 
